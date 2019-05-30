@@ -11,7 +11,7 @@ public class Moto {
 
 	public Moto(String m, int c) {
 		matricula = m;
-		cilindrada = c;
+		cilindrada = c; 
 	}
 
 	public String getMatricula() {
