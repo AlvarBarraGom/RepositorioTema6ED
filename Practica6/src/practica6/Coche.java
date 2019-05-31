@@ -62,7 +62,7 @@ public class Coche {
 		fabricante = f;
 	}
 
-	public String metodo1() {
+	public String cocheTipo() {
 		resultado = "";
 		if (combustible == "Gasolina") {
 			resultado += EL_COCHE_CON_MATRICULA + matricula + " "+ metodoA(modelo, fabricante);
