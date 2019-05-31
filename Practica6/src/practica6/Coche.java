@@ -6,6 +6,7 @@ public class Coche {
 	String combustible;
 	String modelo;
 	String fabricante;
+	public String resultado;
 
 	public Coche() {
 		matricula = "";
@@ -22,19 +23,15 @@ public class Coche {
 	}
 
 	public String metodo1() {
-		String resultado = "";
+		resultado = "";
 		if (combustible == "Gasolina") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoA(modelo, fabricante);
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " "+ metodoA(modelo, fabricante);
 		} else if (combustible == "Diesel") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoB(modelo, fabricante);
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " "+ metodoB(modelo, fabricante);
 		} else if (combustible == "Híbrido") {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += metodoC(modelo, fabricante);
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " "+ metodoC(modelo, fabricante);
 		} else {
-			resultado += EL_COCHE_CON_MATRICULA + matricula + " ";
-			resultado += "no dispone de información";
+			resultado += EL_COCHE_CON_MATRICULA + matricula + " "+ "no dispone de información";
 		}
 		return resultado;
 	}
