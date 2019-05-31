@@ -15,6 +15,46 @@ public class Coche {
 		fabricante = "";
 	}
 
+	public String getMatricula()
+	{
+		return matricula;
+	}
+
+	public String getCombustible()
+	{
+		return combustible;
+	}
+
+	public String getModelo()
+	{
+		return modelo;
+	}
+
+	public String getFabricante()
+	{
+		return fabricante;
+	}
+
+	public void setMatricula(String matricula)
+	{
+		this.matricula = matricula;
+	}
+
+	public void setCombustible(String combustible)
+	{
+		this.combustible = combustible;
+	}
+
+	public void setModelo(String modelo)
+	{
+		this.modelo = modelo;
+	}
+
+	public void setFabricante(String fabricante)
+	{
+		this.fabricante = fabricante;
+	}
+
 	public Coche(String m, String c, String mo, String f) {
 		matricula = m;
 		combustible = c;
